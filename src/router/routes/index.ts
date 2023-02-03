@@ -1,6 +1,7 @@
 import type { AppRouteRecordRaw } from "@/router/types";
 
 import { EXCEPTION_404, LAYOUT, PAGE_NOT_FOUND_NAME } from "@/router/constant";
+import BUTTON_ROUTE from "@/router/routes/modules/button";
 import ABOUT_ROUTE from "@/router/routes/modules/about";
 import TEST_ROUTE from "@/router/routes/modules/test";
 // import NESTED_ROUTE from "@/router/routes/modules/nested";
@@ -56,6 +57,7 @@ export const PAGE_NOT_FOUND_ROUTE: AppRouteRecordRaw = {
 export const basicRoutes = [
   ROOT_ROUTE,
   HOME_ROUTE,
+  BUTTON_ROUTE,
   ABOUT_ROUTE,
   TEST_ROUTE,
   // NESTED_ROUTE,
