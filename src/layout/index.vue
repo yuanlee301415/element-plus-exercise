@@ -2,10 +2,11 @@
   <section class="layout">
     <LayoutSideBar class="sideBar" />
 
-    <section class="main">
+    <main>
       <LayoutHeader />
       <LayoutContent />
-    </section>
+    </main>
+    
   </section>
 </template>
 
@@ -30,8 +31,11 @@ import LayoutContent from "./Content/index.vue";
     height: 100vh;
     background-color: #001529;
   }
-  .main {
+  main {
     margin-left: @sideWidth + 2px;
+    .container {
+      padding: 10px;
+    }
   }
 }
 </style>
