@@ -1,10 +1,10 @@
-# Vue3-Ts-Template
+# element-plus-exercise
 
 ```bash
 npm init vue@latest
 ```
 
-## Vue3 + TS 模板
+## element-plus 演练
 
 This template should help get you started developing with Vue 3 in Vite.
 
