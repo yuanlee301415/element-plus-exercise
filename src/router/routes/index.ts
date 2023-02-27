@@ -3,7 +3,13 @@ import type { AppRouteRecordRaw } from "@/router/types";
 import { EXCEPTION_404, LAYOUT, PAGE_NOT_FOUND_NAME } from "@/router/constant";
 import BUTTON_ROUTE from "@/router/routes/modules/button";
 import ABOUT_ROUTE from "@/router/routes/modules/about";
+import BADGE_ROUTE from "@/router/routes/modules/badge";
+import CARD_ROUTE from "@/router/routes/modules/card";
+import ICON_ROUTE from "@/router/routes/modules/icon";
+import COLLAPSE_ROUTE from "@/router/routes/modules/collapse";
 import TEST_ROUTE from "@/router/routes/modules/test";
+import TABS_ROUTE from "@/router/routes/modules/tabs";
+import CALENDAR_ROUTE from "@/router/routes/modules/calendar";
 // import NESTED_ROUTE from "@/router/routes/modules/nested";
 
 export const ROOT_ROUTE: AppRouteRecordRaw = {
@@ -58,8 +64,14 @@ export const basicRoutes = [
   ROOT_ROUTE,
   HOME_ROUTE,
   BUTTON_ROUTE,
+  BADGE_ROUTE,
+  CARD_ROUTE,
+  ICON_ROUTE,
+  COLLAPSE_ROUTE,
   ABOUT_ROUTE,
   TEST_ROUTE,
-  // NESTED_ROUTE,
+  TABS_ROUTE,
+CALENDAR_ROUTE,
+// NESTED_ROUTE,
   PAGE_NOT_FOUND_ROUTE,
 ];

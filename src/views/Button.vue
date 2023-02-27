@@ -1,5 +1,5 @@
 <template>
-  <h1>Default</h1>
+  <h1>Basic</h1>
   <el-button>Button</el-button>
 
   <hr>
