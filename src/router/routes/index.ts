@@ -10,6 +10,9 @@ import COLLAPSE_ROUTE from "@/router/routes/modules/collapse";
 import TEST_ROUTE from "@/router/routes/modules/test";
 import TABS_ROUTE from "@/router/routes/modules/tabs";
 import CALENDAR_ROUTE from "@/router/routes/modules/calendar";
+import CONTAINER_ROUTE from "@/router/routes/modules/container";
+import SPACE_ROUTE from "@/router/routes/modules/space";
+import STATISTIC_ROUTE from "@/router/routes/modules/statistic";
 // import NESTED_ROUTE from "@/router/routes/modules/nested";
 
 export const ROOT_ROUTE: AppRouteRecordRaw = {
@@ -63,15 +66,18 @@ export const PAGE_NOT_FOUND_ROUTE: AppRouteRecordRaw = {
 export const basicRoutes = [
   ROOT_ROUTE,
   HOME_ROUTE,
+  ABOUT_ROUTE,
+  TEST_ROUTE,
   BUTTON_ROUTE,
   BADGE_ROUTE,
   CARD_ROUTE,
   ICON_ROUTE,
   COLLAPSE_ROUTE,
-  ABOUT_ROUTE,
-  TEST_ROUTE,
-  TABS_ROUTE,
 CALENDAR_ROUTE,
+CONTAINER_ROUTE,
+SPACE_ROUTE,
+TABS_ROUTE,
+STATISTIC_ROUTE,
 // NESTED_ROUTE,
   PAGE_NOT_FOUND_ROUTE,
 ];
