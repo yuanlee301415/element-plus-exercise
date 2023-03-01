@@ -4,19 +4,19 @@ import { LAYOUT } from "@/router/constant";
 const TABS_ROUTE: AppRouteRecordRaw = {
   path: "/tabs",
   name: "Tabs",
-  redirect: "/tabs/basic",
+  redirect: "/tabs",
   component: LAYOUT,
   meta: {
-    title: "Tabs标签页",
-    hiddenChildrenInMenu: false
+    title: "标签页",
+    hiddenChildrenInMenu: true
   },
   children: [
     {
-      path: "basic",
-      name: "BasicPage",
-      component: () => import("@/views/tabs/basic.vue"),
+      path: "",
+      name: "TabsPage",
+      component: () => import("@/views/tabs.vue"),
       meta: {
-        title: "基础"
+        title: "标签页"
       }
     }
   ]
