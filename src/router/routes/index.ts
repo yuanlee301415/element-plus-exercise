@@ -13,6 +13,7 @@ import CALENDAR_ROUTE from "@/router/routes/modules/calendar";
 import CONTAINER_ROUTE from "@/router/routes/modules/container";
 import SPACE_ROUTE from "@/router/routes/modules/space";
 import STATISTIC_ROUTE from "@/router/routes/modules/statistic";
+import AVATAR_ROUTE from "@/router/routes/modules/avatar";
 // import NESTED_ROUTE from "@/router/routes/modules/nested";
 
 export const ROOT_ROUTE: AppRouteRecordRaw = {
@@ -78,6 +79,7 @@ CONTAINER_ROUTE,
 SPACE_ROUTE,
 TABS_ROUTE,
 STATISTIC_ROUTE,
+AVATAR_ROUTE,
 // NESTED_ROUTE,
   PAGE_NOT_FOUND_ROUTE,
 ];
