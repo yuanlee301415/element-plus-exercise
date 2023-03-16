@@ -15,7 +15,8 @@
   </el-collapse>
 
   <h1>手风琴效果</h1>
-  <el-collapse v-model="namesB" accordion @change="change">
+  <el-button @click="handleSetActiveNames">setActiveNames(['home', 'news'])</el-button>
+  <el-collapse ref="accordionRef" v-model="namesB" accordion @change="change">
     <el-collapse-item title="Home" name="home">
       <h2>Home Item</h2>
     </el-collapse-item>
@@ -60,11 +61,20 @@
 </template>
 
 <script lang="ts" setup>
-
-import {ref} from "vue";
+import type { CollapseInstance } from 'element-plus'
+import {onMounted, ref} from "vue";
 
 const namesA = ref<string[]>([])
 const namesB = ref<string[]>(['disabled'])
 const namesC = ref<string[]>(['disabled'])
 const change = (names: string | string[]) => console.log('change names:', names)
+
+/**
+ * setActiveNames
+ */
+const accordionRef = ref<CollapseInstance>()
+function handleSetActiveNames() {
+  accordionRef.value!.setActiveNames(['home', 'news'])
+}
+
 </script>
