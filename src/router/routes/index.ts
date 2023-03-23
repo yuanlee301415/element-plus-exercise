@@ -15,6 +15,7 @@ import SPACE_ROUTE from "@/router/routes/modules/space";
 import STATISTIC_ROUTE from "@/router/routes/modules/statistic";
 import AVATAR_ROUTE from "@/router/routes/modules/avatar";
 import TRANSFER_ROUTE from "@/router/routes/modules/transfer";
+import TREE_ROUTE from "@/router/routes/modules/tree";
 // import NESTED_ROUTE from "@/router/routes/modules/nested";
 
 export const ROOT_ROUTE: AppRouteRecordRaw = {
@@ -82,6 +83,7 @@ TABS_ROUTE,
 STATISTIC_ROUTE,
 AVATAR_ROUTE,
 TRANSFER_ROUTE,
+TREE_ROUTE,
 // NESTED_ROUTE,
   PAGE_NOT_FOUND_ROUTE,
 ];
